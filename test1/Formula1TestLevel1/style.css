@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+body {
+  background-color: #fbfafa;
+  margin: 0; }
+
+header {
+  width: 100%;
+  margin: 0 auto;
+  background-color: #ffffff; }
+  header .photoGrid {
+    text-align: center; }
+    header .photoGrid .hotdogPhoto {
+      width: 16.66%;
+      height: auto;
+      margin: 0 -2px -6px -2px;
+      display: inline-block; }
+  header .topMenu .topMenuLIst {
+    margin: 2px;
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    font-size: calc( 0.012 * 100vw + 0.29em );
+    -webkit-box-shadow: 0 2px 11px 3px #e8e7e7;
+    -moz-box-shadow: 0 2px 11px 3px #e8e7e7;
+    box-shadow: 0 2px 11px 3px #e8e7e7; }
+    header .topMenu .topMenuLIst .classItem {
+      padding: 2.7% 3.9%;
+      cursor: pointer; }
+      header .topMenu .topMenuLIst .classItem:hover {
+        background-color: #e1dfe38f; }
+
+main {
+  width: 100%; }
+  main .mainInfo {
+    width: 65%;
+    margin: 0 auto;
+    text-align: center; }
+    main .mainInfo #hotdogLogo {
+      margin: 15% 0 10% 0;
+      width: 9%; }
+    main .mainInfo .mainText {
+      font-family: "Open Sans", sans-serif;
+      font-weight: 300;
+      font-size: calc( 0.04 * 100vw + 0.3rem );
+      color: #8d8c8f; }
+    main .mainInfo #orderBtn {
+      background-color: #286782;
+      padding: 4% 6%;
+      margin: 18% 0;
+      border: none;
+      outline: none;
+      color: #ffffff;
+      font-family: "Open Sans", sans-serif;
+      font-weight: 600;
+      font-size: calc( 0.012 * 100vw + 0.29em );
+      border-radius: 6px;
+      cursor: pointer; }
+  main .hotdogsGrid {
+    width: 100%; }
+    main .hotdogsGrid .hotdogGridItemWrapper {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      margin-top: -4px;
+      justify-content: space-between; }
+      main .hotdogsGrid .hotdogGridItemWrapper .hotdogGridItem {
+        width: 50%;
+        background-color: #ffffff;
+        display: flex;
+        align-items: center;
+        justify-content: space-around; }
+        main .hotdogsGrid .hotdogGridItemWrapper .hotdogGridItem .hotdogBlock {
+          width: 74.5%;
+          position: relative;
+          display: flex;
+          justify-content: space-around; }
+          main .hotdogsGrid .hotdogGridItemWrapper .hotdogGridItem .hotdogBlock .line {
+            width: 7%;
+            margin-top: 7px; }
+            main .hotdogsGrid .hotdogGridItemWrapper .hotdogGridItem .hotdogBlock .line img {
+              width: 100%;
+              height: auto; }
+          main .hotdogsGrid .hotdogGridItemWrapper .hotdogGridItem .hotdogBlock .textWrap {
+            width: 80%; }
+            main .hotdogsGrid .hotdogGridItemWrapper .hotdogGridItem .hotdogBlock .textWrap .hotDogName {
+              font-family: "Open Sans", sans-serif;
+              font-weight: 700;
+              font-size: calc( 0.02 * 100vw + -0.1em );
+              color: #555559; }
+            main .hotdogsGrid .hotdogGridItemWrapper .hotdogGridItem .hotdogBlock .textWrap .hotDogDescription {
+              margin-top: 8%;
+              font-family: "Open Sans", sans-serif;
+              font-weight: 300;
+              font-size: calc( 0.0105 * 100vw + 0.285em );
+              color: #747477; }
+      main .hotdogsGrid .hotdogGridItemWrapper .imageContainer {
+        width: 50%; }
+        main .hotdogsGrid .hotdogGridItemWrapper .imageContainer .hotDogImg {
+          width: 100%; }
+
+footer {
+  background-color: #efefef;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: calc( 0.003 * 100vw + 0.56em );
+  padding: 25px 0; }
+  footer .additions {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 1%;
+    align-items: center; }
+    footer .additions .contactInfo {
+      display: flex;
+      align-items: center; }
+      footer .additions .contactInfo .contactInfoItem {
+        padding: 0 10px; }
+      footer .additions .contactInfo #coordinates {
+        border-right: 1px solid black;
+        border-left: 1px solid black; }
+
+/*# sourceMappingURL=style.css.map */

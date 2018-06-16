@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+$OpSnsfont: 'Open Sans', sans-serif;
+$borderGeneral: 1px solid black;
+$smallScreen: 320px;
+
+
+@function calculateFontSize($f-min, $f-max, $v-min, $v-max, $units: px) {
+  $k: ($f-max - $f-min)/($v-max - $v-min);
+  $b: $f-min - $k * $v-min;
+
+  $b: $b + $units;
+
+  @return calc( #{$k} * 100vw + #{$b} );
+}
+
+
+body{
+  background-color: #fbfafa;
+  margin: 0;
+}
+header{
+  width: 100%;
+  margin: 0 auto;
+  background-color: #ffffff;
+  .photoGrid{
+    text-align: center;
+    .hotdogPhoto{
+      width: 16.66%;
+      height: auto;
+      margin: 0 -2px -6px -2px;
+      display: inline-block;
+    }
+  }
+  .topMenu{
+    .topMenuLIst{
+      margin: 2px;
+      display: flex;
+      justify-content: center;
+      list-style-type: none;
+      font-family: $OpSnsfont;
+      font-weight: 600;
+      font-size: calculateFontSize(0.65, 1.25, 30, 80, em);
+      -webkit-box-shadow: 0 2px 11px 3px rgba(232,231,231,1);
+      -moz-box-shadow: 0 2px 11px 3px rgba(232,231,231,1);
+      box-shadow: 0 2px 11px 3px rgba(232,231,231,1);
+        .classItem{
+          padding: 2.7% 3.9%;
+          cursor: pointer;
+          &:hover{
+            background-color: #e1dfe38f;
+          }
+        }
+
+    }
+  }
+}
+main{
+  width: 100%;
+  .mainInfo{
+    width: 65%;
+    margin: 0 auto;
+    text-align: center;
+    #hotdogLogo{
+      margin: 15% 0 10% 0;
+      width: 9%;
+    }
+    .mainText{
+      font-family: $OpSnsfont;
+      font-weight: 300;
+      font-size: calculateFontSize(1.5, 3.5, 30, 80, rem);
+      color: #8d8c8f;
+
+    }
+    #orderBtn{
+      background-color: #286782;
+      padding: 4% 6%;
+      margin: 18% 0;
+      border: none;
+      outline: none;
+      color: #ffffff;
+      font-family: $OpSnsfont;
+      font-weight: 600;
+      //font-size: 1.25em;
+      font-size: calculateFontSize(0.65, 1.25, 30, 80, em);
+      border-radius: 6px;
+      cursor: pointer;
+    }
+  }
+  .hotdogsGrid{
+    width: 100%;
+    .hotdogGridItemWrapper{
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      margin-top: -4px;
+      justify-content: space-between;
+      .hotdogGridItem{
+        width: 50%;
+        background-color: #ffffff;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        .hotdogBlock{
+          width: 74.5%;
+          position: relative;
+          display: flex;
+          justify-content: space-around;
+          .line{
+            width: 7%;
+            margin-top: 7px;
+            img{
+              width: 100%;
+              height: auto;
+            }
+          }
+          .textWrap {
+            width: 80%;
+
+            .hotDogName {
+              font-family: $OpSnsfont;
+              font-weight: 700;
+              font-size: calculateFontSize(0.5, 1.5, 30, 80, em);
+              color: #555559;
+            }
+            .hotDogDescription {
+              margin-top: 8%;
+              font-family: $OpSnsfont;
+              font-weight: 300;
+              font-size: calculateFontSize(0.6, 1.125, 30, 80, em);
+              color: #747477;
+            }
+          }
+        }
+      }
+      .imageContainer{
+        width: 50%;
+        .hotDogImg{
+          width: 100%;
+        }
+      }
+    }
+  }
+
+
+}
+footer{
+  background-color: #efefef;
+  font-family: $OpSnsfont;
+  font-weight: 400;
+  font-size: calculateFontSize(0.65, 0.8, 30, 80, em);
+  padding: 25px 0;
+  .additions{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 1%;
+    align-items: center;
+    .contactInfo{
+      display: flex;
+      align-items: center;
+      .contactInfoItem{
+        padding: 0 10px;
+      }
+      #coordinates{
+        border-right: $borderGeneral;
+        border-left: $borderGeneral;
+      }
+    }
+  }
+
+}
