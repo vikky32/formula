@@ -44,10 +44,9 @@ const URL =  'https://formula-test-api.herokuapp.com/menu';
         today = month+ '-' + day + '-' +year;
 
         const hotdogArr = this.state.hotdogs.filter((item, index) => item.expirationDate> today );
-
         const itemsList = hotdogArr.map((item, index) =>(
 
-            <div className="hotdogGridItemWrapper" key={index}>
+            <div className={(index%2?'hotdogGridItemWrapper reverseGridItem':'hotdogGridItemWrapper')} key={index}>
                 <div className="hotdogGridItem">
                     <div className="hotdogBlock">
                         <div className="line"> </div>

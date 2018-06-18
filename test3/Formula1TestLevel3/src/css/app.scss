@@ -97,12 +97,16 @@ header{
   }
   .hotdogGrid{
     width: 100%;
+    .reverseGridItem{
+      flex-direction: row-reverse;
+    }
     .hotdogGridItemWrapper{
       display: flex;
       flex-wrap: wrap;
       width: 100%;
       margin-top: -4px;
       justify-content: space-between;
+
       .hotdogGridItem{
         width: 50%;
         background-color: #ffffff;
@@ -147,6 +151,7 @@ header{
           width: 100%;
         }
       }
+
     }
   }
 
